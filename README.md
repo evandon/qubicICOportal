@@ -42,7 +42,7 @@ QIP solves this by providing:
 4. At `startEpoch`, Phase 1 begins  
 5. **Buyers** call `buyToken()` → pay in energy → receive tokens instantly  
 6. **95% of funds** go to the 10 defined addresses (per %)  
-7. **5% remains in contract** (for future dividend use or burn)  
+7. **5% of funds** go to the Smart Contract Shareholders  
 8. At end of each phase: unsold tokens roll over to next phase  
 9. After Phase 3: unsold tokens return to creator, ICO is removed  
 

@@ -5,8 +5,8 @@ Allow QIP Smart Contract to be deployed on Qubic.
 
 **Available Options**
 
-- **Option 1:** Yes allow  
-- **Option 2:** Don’t Allow.
+- **Option 1:** yes allow  
+- **Option 0:** Don’t Allow.
 
 ---
 

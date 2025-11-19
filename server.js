@@ -37,9 +37,12 @@ if (!isProduction) {
 // Serve HTML
 app.use('*all', async (req, res,next) => {
   try {
+    //swap the base url
     const url = req.originalUrl.replace(base, '')
+
+    // Skip SSR for API requests
     if (req.originalUrl.startsWith('/api')) {
-    return next(); // Skip SSR for API requests
+    return next(); 
   }
     /** @type {string} */
     let template

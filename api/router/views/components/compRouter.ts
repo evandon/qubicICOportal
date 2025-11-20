@@ -1,14 +1,10 @@
 import { Router } from "express";
-import logo from "../../../views/components/branding/logo.ts";
+import elementRouter from "./elements/elementRouter.ts";
+import brandingRouter from "./branding/brandingRouter.ts";
 
 const compRouter = Router();
-compRouter.get('/logo', (req, res) =>{
-  try{
-    res.status(200).send(logo(200))
-    console.log("Logo component served")
-  }catch(err){
-    res.status(500).send("Error loading logo component")
-  }
+compRouter.use('/branding',brandingRouter);
+compRouter.use('/elements',elementRouter);
+// Additional component routes can be added here
 
-})
 export default compRouter;

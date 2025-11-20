@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises'
 import express from 'express'
-import router from './api/router/routeHandler.js'
+import router from './api/router/index.ts'
 
 
 // Constants
@@ -26,6 +26,7 @@ if (!isProduction) {
     appType: 'custom',
     base,
   })
+  app.use('/api',router)
   app.use(vite.middlewares)
 } else {
   const compression = (await import('compression')).default
@@ -75,4 +76,3 @@ app.use('*all', async (req, res,next) => {
 app.listen(port, () => {
   console.log(`Server started at http://localhost:${port}`)
 })
-zerve

@@ -4,7 +4,7 @@ import brandingRouter from "./branding/brandingRouter.ts";
 
 const compRouter = Router();
 compRouter.use('/branding',brandingRouter);
-compRouter.use('/elements',elementRouter);
+compRouter.use('/element',elementRouter);
 // Additional component routes can be added here
 
 export default compRouter;

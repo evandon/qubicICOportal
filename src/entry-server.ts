@@ -6,14 +6,12 @@ export function render(_url: string) {
       id="app_frame" 
       class="container"
     >
-    
       <header 
         id="greeting" 
-        hx-get="/api/views/components/logo" 
+        hx-get="/api/views/mod/main-header" 
         hx-trigger="load" 
         hx-target="#greeting" 
         hx-swap="innerHTML">
-        Qubic ICO Portal
       </header>
     </div>
   `

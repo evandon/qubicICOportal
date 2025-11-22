@@ -3,7 +3,6 @@ import MainHeader from "../mods/main_header.ts";
 
 const serve = ()=>{
     const html = /*html*/`
-
         ${AppFrame(/*html*/`
             ${MainHeader(true)} 
             `)}
